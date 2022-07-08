@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+}
+
+
+
+#cat
+{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+
+#cat img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#btn
+{
+    background-color: cornflowerblue;
+    border: 0;
+    border-radius: 4.5px;
+    color: #fff;
+    padding: 5px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#btn:hover
+{
+    transform: scale(1.1);
+}
