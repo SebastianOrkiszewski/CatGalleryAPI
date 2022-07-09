@@ -7,7 +7,7 @@
 
 body
 {
-    background-color: cornsilk;
+    background: linear-gradient(180deg, #227487 0%, #7c8de5 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,17 +17,31 @@ body
 
 }
 
-
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 30px;
+    backdrop-filter: blur(1px) saturate(100%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.21);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+}
 
 #cat
 {
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     height: 400px;
     width: 300px;
+    border-radius: 10px;
+    
 }
 
 #cat img 
@@ -35,11 +49,16 @@ body
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 8px 18px -7px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 4px 8px 18px -7px rgba(66, 68, 90, 1);
+    box-shadow: 4px 8px 18px -7px rgba(66, 68, 90, 1);
+    
 }
 
 #btn
 {
-    background-color: cornflowerblue;
+    background-color: rgb(61, 196, 73);
     border: 0;
     border-radius: 4.5px;
     color: #fff;
@@ -51,4 +70,16 @@ body
 #btn:hover
 {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width:400px){
+    #cat{
+        width: 240px;
+    }
+    #btn{
+        padding: 5px 15px;
+    }
+    .container{
+        padding: 10px 15px; 
+    }
 }

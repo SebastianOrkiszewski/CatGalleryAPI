@@ -11,4 +11,4 @@ function nextCat() {
     });
 }
 
-
+console.log(nextCat());
